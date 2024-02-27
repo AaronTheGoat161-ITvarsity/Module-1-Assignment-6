@@ -1,0 +1,270 @@
+ #menu-bar {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+ }
+ #menu-bar a{
+   line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+ }
+
+ #menu-bar .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+ }
+
+ a:nth-child(1){
+    width: 100px;
+ }
+ a:nth-child(2){
+    width: 110px;
+ }
+ a:nth-child(3){
+    width: 100px;
+ }
+ a:nth-child(4){
+   width: 160px;
+}
+a:nth-child(5){
+   width: 120px;
+}
+ #menu-bar .start-index, a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+ } 
+ #menu-bar .start-about, a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+ } 
+ #menu-bar .start-products, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+ } 
+ #menu-bar .start-contact-us, a:nth-child(4):hover~.animation{
+   width: 160px;
+   left: 310px;
+   background-color: #e67e22;
+} 
+#menu-bar .start-cart, a:nth-child(5):hover~.animation{
+   width: 120px;
+   left: 470px;
+   background-color: #9b59b6;
+}
+   body{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+ }
+ span{
+    color: #2BD6B4;
+ }
+
+ * {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Apply css properties to container class*/
+
+.container {
+	position: relative;
+	width: 1000px;
+	display: contents;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 8px;
+}
+
+/*Apply css properties to card class*/
+
+.container .card {
+	height: 220px;
+	max-width: 200px;
+	position: relative;
+	margin: 30px 10px;
+	padding: 10px 5px;
+	background: wheat;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px black;
+	transition: 0.3s ease-in-out;
+}
+
+/*Apply css properties to card class when it get pointed by cursor*/
+
+.container .card:hover {
+	height: 250px;
+}
+
+/*Apply css properties to imgbox class*/
+
+.containe .card .imgbox {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+}
+
+/*Apply css properties to img tag*/
+
+.container .card .imgbox img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+/*Apply css properties to content class*/
+
+.container .card .content {
+	position: relative;
+	margin-top: -100px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+/*Apply css properties to content when card gets hovered*/
+
+.container .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -10px;
+	transition-delay: 0.3s;
+}
+
+/* Css part completed*/
+
+.center {
+   display: contents;
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   width: 265px;
+   height: 199px;
+ }
+ 
+ img{
+   max-width: 100%;
+   height: 199px;
+ }
+
+ button {
+   background-color: #007BFF;  /* Blue background */
+   border-radius: 5px;        /* Round border */
+   border: none;              /* No border */
+   color: #fff;               /* White text */
+   padding: 10px 20px;        /* Button padding */
+   font-size: 14px;           /* Button font size */
+   cursor: pointer;           /* Cursor pointer */
+}
+
+.row {
+   display: -ms-flexbox; /* IE10 */
+   display: flex;
+   -ms-flex-wrap: wrap; /* IE10 */
+   flex-wrap: wrap;
+   margin: 0 -16px;
+ }
+ 
+ .col-25 {
+   -ms-flex: 25%; /* IE10 */
+   flex: 25%;
+ }
+ 
+ .col-50 {
+   -ms-flex: 50%; /* IE10 */
+   flex: 50%;
+ }
+ 
+ .col-75 {
+   -ms-flex: 75%; /* IE10 */
+   flex: 75%;
+ }
+ 
+ .col-25,
+ .col-50,
+ .col-75 {
+   padding: 0 16px;
+ }
+ 
+ .container {
+   background-color: #f2f2f2;
+   padding: 5px 20px 15px 20px;
+   border: 1px solid lightgrey;
+   border-radius: 3px;
+ }
+ 
+ input[type=text] {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+ }
+ 
+ label {
+   margin-bottom: 10px;
+   display: block;
+ }
+ 
+ .icon-container {
+   margin-bottom: 20px;
+   padding: 7px 0;
+   font-size: 24px;
+ }
+ 
+ .btn {
+   background-color: #04AA6D;
+   color: white;
+   padding: 12px;
+   margin: 10px 0;
+   border: none;
+   width: 100%;
+   border-radius: 3px;
+   cursor: pointer;
+   font-size: 17px;
+ }
+ 
+ .btn:hover {
+   background-color: #45a049;
+ }
+ 
+ span.price {
+   float: right;
+   color: grey;
+ }
+ 
+ /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+ @media (max-width: 800px) {
+   .row {
+     flex-direction: column-reverse;
+   }
+   .col-25 {
+     margin-bottom: 20px;
+   }
+ }
